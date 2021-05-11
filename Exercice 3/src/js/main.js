@@ -39,3 +39,39 @@ for (i in grossesSommes) {
 }
 console.log(sommes);
 console.log(grossesSommes);
+
+// 6.
+let donnees = [14, 7 , 97, {} , "247" , 67 , 101 , true , 34 ,78 , [] ,'coding school' , 0, 11 , 32 , "italie" , 61,null,'cent',100];
+
+let typeString = [];
+let typeNumber = [];
+let typeObject = [];
+let typeAutre = [];
+
+donnees.forEach(element => {
+    console.log(typeof element);
+    if (typeof element == "string") {
+        typeString.push(element);
+    }
+    else if (typeof element == "number") {
+    typeNumber.push(element);
+    }
+    else if (typeof element == "object") {
+        typeObject.push(element);
+    }
+    else {
+        typeAutre.push(element);
+    }
+});
+
+console.log(donnees);
+console.log(typeString);
+console.log(typeNumber);
+console.log(typeObject);
+console.log(typeAutre);
+
+// typeString.forEach(element => {
+//     donnees.splice(donnees.indexOf(element),1);
+// });
+
+donnees.splice(0, donnees.length);
